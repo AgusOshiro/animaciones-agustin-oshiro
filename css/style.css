@@ -16,12 +16,55 @@
     transform: skew(15deg);
 }
 
+.main {
+    background-color: black;
+}
+
 .main h1 {
     color: chartreuse;
     font-size: 50px;
+}
+
+.main img:hover {
+    transform: skew(10deg);
+
 }
 
  h1:hover {
     color: red;
     transition: .5s;
  }
+
+ p {
+    color: white;
+    animation-name: animacionParrafo;
+    animation-duration: 25s;
+
+ }
+
+@keyframes animacionParrafo {
+    0% {
+        color: white;
+        font-size: 25px;
+    }
+    25% {
+        color: aqua;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    50% {
+        color: violet;
+        font-size: 35px;
+    }
+    75% {
+        color: blueviolet;
+
+    }
+    100% {
+        color: orange;
+        text-decoration: underline;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+
+
+}
